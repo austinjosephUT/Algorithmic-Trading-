@@ -2,7 +2,7 @@
 
 
 def initialize(context):
-    context.security_list = [sid(5060), sid(7792), sid(24556), sid(1746)]
+    context.security_lists = [sid(5060), sid(7792), sid(24556), sid(1746)]
 
     schedule_function(rebalance, date_rules.week_start(), time_rules.market_open())
 
